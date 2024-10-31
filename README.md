@@ -14,7 +14,7 @@ Respuesta:
 
 URL: /api/events
 MÉTODO: POST
-HEADERS: <TOKEN>
+HEADERS: {TOKEN}
 BODY: nombre, descripcion, fecha, ubicacion, tipoDeporte, organizador
 
 Respuesta:
@@ -22,9 +22,9 @@ Respuesta:
 
 ## Actualización de evento
 
-URL: /api/event/<EVENTID>
+URL: /api/event/{EVENTID}
 MÉTODO: PUT
-HEADERS: <TOKEN>
+HEADERS: {TOKEN}
 BODY: aquellos campos que necesitemos modificar
 
 Respuesta: 
@@ -32,9 +32,9 @@ Respuesta:
 
 ## Borrado de un evento
 
-URL: /api/events/<EVENTID>
+URL: /api/events/{EVENTID}
 MÉTODO: DELETE
-HEADERS: <TOKEN>
+HEADERS: {TOKEN}
 BODY: X
 
 Respuesta:
@@ -42,7 +42,7 @@ Respuesta:
 
 ## Recuperar evento por ID
 
-URL: /api/events/<EVENTID>
+URL: /api/events/{EVENTID}
 MÉTODO: GET
 HEADERS: X
 BODY: X
@@ -52,7 +52,7 @@ Respuesta:
 
 ## Recuperar eventos por tipo de deporte
 
-URL: /api/events?type=<TIPODEPORTE>
+URL: /api/events?type={TIPODEPORTE}
 MÉTODO: GET
 HEADERS: X
 BODY: X
@@ -73,7 +73,7 @@ Respuesta:
 
 ## Recuperar los eventos dentro de un rango de fechas
 
-URL: /api/events/date?from=<FECHAINICIO>&to=<FECHAFIN>
+URL: /api/events/date?from={FECHAINICIO}&to={FECHAFIN}
 MÉTODO: GET
 HEADERS: X
 BODY: X
